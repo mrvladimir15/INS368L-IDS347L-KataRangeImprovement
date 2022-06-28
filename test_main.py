@@ -22,5 +22,12 @@ class testRange():
     
     def test_getEquals(self):
         assert Range.getEquals(self,"[3,8)") == True
-    def getAllpoints(self):
-        assert range.getAllpoints(self) == ("3","4","5","6","7")
+    
+    def test_getAllpoints(self):
+        assert Range.getAllpoints(self) == (3,4,5,6,7)
+        
+    def test_containsRange(self):
+        assert Range.containsRange(self, "[3,7)") == True
+        
+    def test_endPoints(self):
+        assert Range.endPoints(self) == "(3,7)"
