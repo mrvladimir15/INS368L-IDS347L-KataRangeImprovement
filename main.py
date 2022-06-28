@@ -69,7 +69,34 @@ class Range:
         else:
             return False
         
-a=Range("(2,7]")
-b=Range("[3,8)")
 
-print(a.getEquals(b.interval))
+    def getAllpoints(self):
+        fi1 = getFI(self.interval)
+        fn1 = getFN(self.interval)
+        ln1 = getLN(self.interval)
+        li1 = getLI(self.interval)
+    #getting first interval
+        if fi1 == "(":
+            fn1 += 1
+        elif fi1 == "[":
+            pass
+        else:
+            return "Invalid first interval opening symbol"
+    #Getting last interval
+        if li1 == ")":
+            ln1 -= 1
+        elif li1 == "]":
+            pass
+        else:
+            return "Invalid final interval closing symbol"
+
+        while fn1 <= ln1:
+            print(fn1)
+            fn1 += 1
+
+#a=Range("(2,7]")
+#b=Range("[3,8)")
+
+# print(a.getEquals(b.interval))
+
+        
