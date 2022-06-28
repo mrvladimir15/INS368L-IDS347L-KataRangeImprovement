@@ -1,0 +1,6 @@
+README.md
+setup.py
+INS368_IDS345_KataRangePackage.egg-info/PKG-INFO
+INS368_IDS345_KataRangePackage.egg-info/SOURCES.txt
+INS368_IDS345_KataRangePackage.egg-info/dependency_links.txt
+INS368_IDS345_KataRangePackage.egg-info/top_level.txt

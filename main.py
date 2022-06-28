@@ -160,11 +160,3 @@ class Range:
             return "Invalid final interval closing symbol"
         
         return fn1, ln1
-            
-a=Range("(2,7]")
-b=Range("[3,8)")
-
-# print(a.getEquals(b.interval))
-# print(a.getAllpoints())
-# print(a.containsRange(b.interval))
-print(a.endPoints())
